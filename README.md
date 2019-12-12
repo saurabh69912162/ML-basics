@@ -1,3 +1,6 @@
+![GitHub Logo](/images/logo.png)
+
+
 # ML-basics
 Basic ML and DL Concepts "that every one does!"
 Stock Market Prediction – Linear Regression Example
@@ -7,8 +10,8 @@ Stock – Apple (AAPL)
 ________________________________________________________________________
 
 # Read csv and make the Date column the index
-df = read_csv(‘AAPL.csv’, index_col=’Date’)
-print(len(df))
+```df = read_csv(‘AAPL.csv’, index_col=’Date’)
+print(len(df))```
 
 +++++++++++++++++++++++++++OUTPUT+++++++++++++++++++++++++++++++++++++++
 
@@ -18,16 +21,16 @@ print(len(df))
 
 
 # Selecting few parameters that will be used as features for model
-df = df[['Open','Close','High','Low','Adj Close']]
+```df = df[['Open','Close','High','Low','Adj Close']]```
 
 # New feature 
-df['HL_PCT'] = (df['High']-df['Low'])/df['High']
+```df['HL_PCT'] = (df['High']-df['Low'])/df['High']```
 
 # Label or forecast column
-forecast_column = 'Adj Close'
+```forecast_column = 'Adj Close'
 
 
-df.fillna(-99999, inplace=True)
+df.fillna(-99999, inplace=True)```
 
  calculating forecast_out -> which is int value 
  and creating a new label column with ‘Adj Close’ as Label feature
