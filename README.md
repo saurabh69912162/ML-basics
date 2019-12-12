@@ -145,3 +145,7 @@ plt.xlabel('Date')
 plt.ylabel('Price')
 
 plt.show()
+
+
+![GitHub Logo](/Figure12.png)
+Format: ![Alt Text](url)
