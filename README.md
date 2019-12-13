@@ -8,12 +8,13 @@
 ![1](/2.PNG)
 ![1](/3.PNG)
 ![1](/4.PNG)
+![1](/5.PNG)
 #### Now define X and y, in our case X is everything except “SURVIVED”, and Y is “SURVIVED”
 
 #### new column = cluster_group for storing the LABELS derived from MeanShift Classifier.
 
 #### survival_rates = {} -> empty dict
-![1](/5.PNG)
+
 #### Calculating Survival Rate by dividing the total number of people that survived in that cluster to the total number of people in that cluster.
 ![1](/6.PNG)
 ![1](/7.PNG)
